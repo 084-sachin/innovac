@@ -1,0 +1,256 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    /* background: url('../gf1.gif'); */
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /* position: absolute;
+  top:0%;
+  left: 0%; */
+  width:100%;
+  margin: 0;
+  padding: 0;
+  height:100px;
+  font-size: 15px;
+}
+/* navbar */
+nav{
+  color: #FFF;
+  margin:30px 90px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  /* float: left; */
+  display: inline-block;
+  transition: .3s;
+}
+nav ul li a{
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #EFEEF5;
+  transition: .5;
+  font-size: 17px;
+  margin-left:16px;
+}
+nav ul:hover li a{
+  opacity: .3;
+  filter: blur(1px);
+}
+nav ul li:hover a{
+  text-decoration: none;
+  opacity: 1;
+  filter: blur(0);
+  /* color: #591BC5;; */
+}
+nav ul li:hover{
+  /* height: 45px; */
+  transform: scale(1.4,1.4);
+  /* padding-top: 30px;
+  margin-top: -10px; */
+ /* background: #EFEEF5; */
+  text-decoration: none;
+  transition: 0.3s;
+  /* transform: skew(15deg); */
+}
+/* Logo */
+.logo{
+  width: 35px;
+  height: 35px;
+  background: #EFEEF5;
+  margin: 40px 63px;
+  float: left;
+  transform: rotate(-30deg);
+}
+.logo span{
+  color: #591BC5;
+  font-size: 2em;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.nlogo{
+    width: 50px;
+    height: 50px;
+  }
+  .lft{
+    margin-left: 30px;
+    margin-right: 80px;
+  }
+  .lft p{
+    margin-left: 10px;
+    float: right;
+  }
+  #bck{
+    object-fit: cover;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+  }
+  .eventhead{
+      margin-top: 45px;
+      margin-bottom: 30px;
+      margin-left: -50px;
+      text-align: center;
+      font-size: 33px;
+      color: white;
+  }
+  .event{
+      display: flex;
+      flex-direction: column;
+  }
+  .eitems,.oitems{
+      width: 83%;
+      margin-left: 90px;
+      margin-right: 50px;
+      margin-bottom: 75px;
+      /* position: relative;
+      left: 50px; */
+      height: 40vh;
+      padding-left: 10px;
+      /* padding-right: 10px; */
+      /* border: 1px solid white; */
+      margin-top: 75px;
+      display: flex;
+      align-items: center;
+      transition: all .5s !important;
+      /* border: 3px solid red; */
+  }
+  .eitems:hover,.oitems:hover{
+    transform: scale(1.05) !important;
+  }
+  .eitems .eventpic{
+      margin: 0 130px;
+      margin-right: 100px;
+      margin-left: 55px;
+      height: 220px;
+      width: 220px;
+      border-radius: 50%;
+      transition: all .5s;
+  }
+  /* .eventpic:hover{
+   transform: scale(1.1);
+  } */
+  .oeventpic{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+/* .oeventpic:hover{
+  transform: scale(1.1);
+} */
+  .descrip{
+      line-height: 1.6;
+      width: 700px;
+      font-size: 35px;
+      text-align: center;
+      letter-spacing: 2px;
+      /* border: 3px solid red ; */
+  }
+  .descrip h1{
+    margin:0;
+    text-align: center;
+    background-color: #f3ec78;
+    background-image: linear-gradient(135deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    filter: brightness(140%);
+    transition: all .5s;
+  }
+  /* .descrip h1:hover{
+    transform: scale(1.08);
+  } */
+  .oitems .descrip{
+    margin-right: -15px;
+     margin-left: 30px;
+     margin-right: 80px;
+    line-height: 1.6;
+    width: 700px;
+    text-align: left;
+  }
+  .descrip p{
+    margin: 0;
+    font-size: 21px;
+    text-align: justify;
+  }
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /*Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    /* background-image: url("logo.png"); */
+    /* color: white; Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    /* padding: 5px; Some padding */
+    border-radius: 100px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+  @import "https://fonts.googleapis.com/css?family=Righteous";
+
+  /* html, */
+  /* body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #131313;
+  } */
+  
+  /* .specialtext {
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+  
+  
+  /* #text {
+    font-size: 150px;
+    font-family: Righteous;
+  }
+  
+  #fill {
+    animation: shift 5s linear infinite;
+  }
+  
+  @keyframes shift {
+    0% {
+      x: 0;
+    }
+    100% {
+      x: -2000;
+    }
+  } */
+  
+
+
+
+  /* 
+  You want a simple and fancy tooltip?
+  Just copy all [data-tooltip] blocks:
+*/
+
+  

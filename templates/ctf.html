@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Mind Matrix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/allevents.css">
+
+</head>
+
+<body>
+<div class="overall">
+  <video loop muted autoplay id="bck">
+    <source src="../static/images/gf103.mp4" type="video/mp4">
+    hello
+</video>
+  <header class="animated fadeIn">
+    <!-- navbar -->
+    <div class="lft">
+        <img src="../static/images/nittlogo.png" alt="logo" class="nlogo">
+        <p>National Institute of Technology<br> Tiruchirappalli</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="\">Home</a></li>
+            <li><a href="\about">About</a></li>
+            <li><a href="\event">Events</a></li>
+            <li><a href="\team">Team</a></li>
+            <li><a href="\contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- logo -->
+    <!-- <div class="logo"><span>N</span></div> -->
+</header>
+  <div class="cont container py-5 animated fadeIn">
+  <!-- For demo purpose -->
+  <div class="row mb-5">
+    <div class="col-lg-8 py-4 text-white text-center mx-auto">
+      <h1 class="display-4" style="text-align: center;
+      font-size: 57px;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      background-color: #f8af45;
+    background-image: linear-gradient(130deg, #ffffff, #f8af45);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+      filter: brightness(120%);">Mind Matrix</h1>
+  </div>
+  <!-- End -->
+
+
+  <div class="cw p-5 bg-white container rounded shadow mb-5" style="border-radius: 20px !important; background: rgb(240,235,226,0.9) !important;">
+    <!-- Rounded tabs -->
+    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav" style="background-color: #ece6dd !important;">
+      <li class="nav-item flex-sm-fill">
+        <a id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Description</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="format-tab" data-toggle="tab" href="#format" role="tab" aria-controls="format" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold ">Format</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="rules-tab" data-toggle="tab" href="#rules" role="tab" aria-controls="rules" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Rules</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="contest-tab" data-toggle="tab" href="#contest" role="tab" aria-controls="contest" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Contest</a>
+      </li>
+      <li class="nav-item flex-sm-fill">
+        <a id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" class="nav-link border-0 text-uppercase font-weight-bold">Contact</a>
+      </li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div id="description" role="tabpanel" aria-labelledby="description-tab" class="scr tab-pane fade px-4 py-5 show active">
+        <p>Mind Matrix is being conducted by PCC club, under <b>Innovac 21</b>. This contest will check your decoding skills as well as evaluate how good you are at hacking.</p>
+        <p> Participate and outsmart the other participants to reach at the peak of the Hackerboard.</p>
+      </div>
+      <div id="format" role="tabpanel" aria-labelledby="format-tab" class="scr tab-pane fade px-4 py-5 ">
+        <ul> This will be a 2 hour Hacking contest, hosted on our website Innovac. <br> <br>
+
+          <li> There are three domains: Riddles, Picture decoding and web exploitation.</li><br>
+          <li> You to crack the first problem to reach on the next problem.</li><br>
+          <li> Points will be awarded for correct answers and hints will also be given after a definite number of attempts. </li><br>
+          <li>Points awarded to you will be shown on hackerboard.</li>
+      </ul>
+      </div>
+      <div id="rules" role="tabpanel" aria-labelledby="rules-tab" class="scr tab-pane fade px-4 py-5">
+        <p>
+          <ul>
+            <li>It is an individual event.</li>
+            <li>There will be 5 questions in each domain. You can switch to next question only if you have attempted previous one.</li>
+            <li>Doubts regarding anything should be asked directly to the event coordinators only. Posting it in public forums will not be entertained.</li>
+            <li>Unfair means to guarantee advantage will lead to disqualification.    </li>
+            <li>The solutions should not be made public or open-sourced during the contest.</li>
+            <li>The decision of the organizers will be final and binding in any case of disputes.</li>
+          </ul>
+          <br><b>Judging Criteria</b><br>
+          At the end of the contest, the participant having highest score on the hackerboard wins.
+        </p>
+      </div>
+      
+      <div id="contest" role="tabpanel" aria-labelledby="contest-tab" class="scr tab-pane text-center fade px-4 py-5">
+        <a href="#"><button class="btn btn-outline-info">Contest Link</button></a>
+      </div>
+      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="scr tab-pane text-center fade px-4 py-5">
+        <h4>Akriti - 99717933048</h4>
+        <h4>Khushboo - 7340588054</h4>
+      </div>
+
+    </div>
+    <!-- End rounded tabs -->
+  </div>
+
+  <!-- <button onclick="location.href='../event.html'" id="btn1" title="Go to top"><img src="logos/left-arrow.png" width="40px" height="40px"
+    alt=""></button>
+    <button onclick="location.href='mothra.html'" id="btn2" title="Go to top"><img src="logos/right-arrow.png" width="40px" height="40px"
+      alt=""></button> -->
+      <a href="\event\mothra" id="btn2" title="Next"><img src="../static/images/events/logos/right-arrow.png" alt="Next"></a>
+
+</div>
+</div>  
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

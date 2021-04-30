@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/astyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+
+    <style>
+        @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+        @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+        @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+        @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+        * {
+            box-sizing: border-box;
+            color: white;
+
+        }
+
+        .section-title h2 {
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            margin: 3% 0;
+        }
+
+        .section-title p {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .single-team {
+            position: relative;
+            left: 450px;
+            padding-bottom: 70px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px #000;
+        }
+
+        .team-img {
+            position: relative;
+            z-index: 5;
+            overflow: hidden;
+        }
+
+        .team-img img {
+            width: 100%;
+            transition: .3s;
+        }
+
+        .single-team:hover .team-img img {
+            transform: scale(1.1);
+        }
+
+        .team-content {
+            height: 80px;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            overflow: hidden;
+            bottom: 0;
+            transition: all .4s;
+            background: #295b5c;
+            z-index: 5;
+        }
+
+        .single-team:hover .team-content {
+            height: 150px;
+        }
+
+        .team-info {
+            padding: 5px 20px 5px 20px;
+            transition: all .5s;
+        }
+
+        .single-team:hover .team-content {
+            background: #000;
+        }
+
+        .single-team .team-content .team-info h3 {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .single-team:hover .team-info h3 {
+            color: tomato;
+        }
+
+        .team-info p {
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .single-team-text p {
+            margin-top: 5px;
+        }
+
+        .team-text {
+            color: #fff;
+            padding: 0 10px 5px;
+        }
+
+
+
+
+
+        /* ignore the code below */
+
+
+        .link-area {
+            /* position:fixed; */
+            bottom: 20px;
+            left: 20px;
+            padding: 15px;
+            border-radius: 40px;
+            background: tomato;
+            z-index: 10;
+        }
+
+        .link-area a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+        }
+
+
+        .video {
+            opacity: 0.3;
+        }
+    </style>
+    <link rel="stylesheet" href="../static/css/allevents.css">
+</head>
+<script>
+    var video = document.getElementById('bck');
+    video.play();
+</script>
+
+<body style="background: black !important;">
+    <video class="video" loop muted autoplay id="bck">
+        <source src="../static/images/test.mp4" type="video/mp4">
+        hello
+    </video>
+
+    <header class="animated fadeIn">
+        <!-- navbar -->
+        <div class="lft">
+            <img src="../static/images/nittlogo.png" alt="logo" class="nlogo">
+            <p>National Institute of Technology<br> Tiruchirappalli</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="\">Home</a></li>
+                <li><a href="\about">About</a></li>
+                <li><a href="\event">Events</a></li>
+                <li><a href="\team">Team</a></li>
+                <li><a href="\contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- logo -->
+        <!-- <div class="logo"><span>N</span></div> -->
+    </header>
+
+        <div class="team-area" style="margin-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+
+                        </div>
+                    </div>
+
+                    <!--== Single Team Item ==-->
+                    <div class="col-md-3">
+                        <div class="single-team" style="align-items: center;">
+                            <div class="team-img">
+                                <img src="../static/members/staff_advisor.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="team-content">
+                                <div class="team-info">
+                                    <h3>Dr. S.Nickolas</h3>
+                                    <p>Staff Advisor <br>Professor</p>
+                                </div>
+                                <p class="team-text"> National Institute of Technology <br> Tiruchirappalli</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="orient">
+        <div class="header-content">
+                <h1 style="letter-spacing: 1px; font-weight: bolder; font-size: 55px;background-color: #6049ca;
+                background-image: linear-gradient(178deg, #bec1ec, #6049ca);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                  filter: brightness(120%);">PCC</h1>
+                <p> The PCC stands for <b>Parallel Computing Club</b>. The technical club involves spreading awareness of Parallel Computing using latest hardware like NVIDIA GPUs and popular processors along with software like Matlab, C, C++ etc. The work involves providing innovative solutions to various problems by developing them in our technical labs.</p>
+        </div>
+        <div class="header-content">
+            <!-- <section id="orient" class="header-content"> -->
+                <h1 style="letter-spacing: 1px; font-weight: bolder; font-size: 55px;background-color: #6049ca;
+                background-image: linear-gradient(178deg, #bec1ec, #6049ca);
+                background-size: 100%;
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-text-fill-color: transparent;
+                  filter: brightness(120%);">INNOVAC</h1>
+                <p>Innovac is a technical event organized by Parallel Computing Club of Department of Computer Applications of National Institute of Technology, Tiruchirappalli. It's aim is to test and improve the skills of the participants.<br></p>
+            <!-- </section> -->
+        </div>
+    </div>
+        <br><br><br><br>
+
+
+</body>
+
+</html>

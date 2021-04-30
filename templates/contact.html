@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="../static/css/tstyle.css">
+  <style>
+    * {
+      color: white;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif !important;
+      background: rgb(3, 3, 51);
+    }
+
+    .abc {
+      margin-top: 50px;
+      margin-left: 0px;
+      padding: 20px;
+      text-align: center;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 50px;
+      padding-bottom: 30px;
+    }
+
+    .et {
+      font-size: 30px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      height: 100px;
+      font-size: 15px;
+      color: white;
+    }
+
+    /* navbar */
+    nav {
+      color: #FFF;
+      margin: 30px 90px;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      /* float: left; */
+      display: inline-block;
+      transition: .3s;
+    }
+
+    nav ul li a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #EFEEF5;
+      transition: .5;
+      font-size: 17px;
+      margin-left: 16px;
+    }
+
+    nav ul:hover li a {
+      opacity: .3;
+      filter: blur(1px);
+    }
+
+    nav ul li:hover a {
+      text-decoration: none;
+      opacity: 1;
+      filter: blur(0);
+      /* color: #591BC5;; */
+    }
+
+    nav ul li:hover {
+      /* height: 45px; */
+      transform: scale(1.4, 1.4);
+      /* padding-top: 30px;
+  margin-top: -10px; */
+      /* background: #EFEEF5; */
+      text-decoration: none;
+      transition: 0.3s;
+      /* transform: skew(15deg); */
+    }
+
+    /* Logo */
+    /* .logo{
+  width: 35px;
+  height: 35px;
+  background: #EFEEF5;
+  margin: 40px 63px;
+  float: left;
+  transform: rotate(-30deg);
+}
+.logo span{
+  color: #591BC5;
+  font-size: 2em;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+} */
+    .nlogo {
+      width: 50px;
+      height: 50px;
+    }
+
+    .lft {
+      margin-left: 30px;
+      margin-right: 80px;
+    }
+
+    .lft p {
+      margin: 15px 0 15px 10px;
+      /* margin-left: 10px; */
+      float: right;
+    }
+
+    .foot {
+      font-size: 40px;
+      margin-top: 6.5%;
+      text-align: center;
+    }
+
+    #myVideo {
+      opacity: 0.2;
+      z-index: -1;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+  </style>
+</head>
+<script>
+  var video = document.getElementById("myVideo");
+  video.play();
+</script>
+
+<body style="font-family:'Josefin Sans', sans-serif;">
+  <video autoplay muted loop id="myVideo">
+    <source src="../static/images/test.mp4" type="video/mp4">
+  </video>
+  <header class="animated fadeIn">
+    <!-- navbar -->
+    <div class="lft">
+      <img src="../static/images/nittlogo.png" alt="logo" class="nlogo">
+      <p>National Institute of Technology<br> Tiruchirappalli</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="\">Home</a></li>
+        <li><a href="\about">About</a></li>
+        <li><a href="\event">Events</a></li>
+        <li><a href="\team">Team</a></li>
+        <li><a href="\contact">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- logo -->
+    <!-- <div class="logo"><span>N</span></div> -->
+  </header>
+  <div class="animated fadeIn">
+    <div class="abc">
+      <h1>PARALLEL COMPUTING CLUB</h1>
+      <p class="et">Department of Computer Applications <br> <br> National Institute of Technology, Tiruchirappalli <br>
+        <br> Email: <a href="mailto:pcc.nitt.20@gmail.com">pcc.nitt.20@gmail.com</a> <br><br></p>
+
+
+      <a style="margin-right: 40px;" href="https://www.facebook.com/PCC-NITT-111662260436904"><img
+          src="../static/images/fb.jpg" alt="facebook" width="40px" height="38px"></a>
+
+      <a href="https://www.instagram.com/pcc_nitt/"><img src="../static/members/Instagram.webp" alt="Instagram"
+          width="45px" height="45px" style="border-radius: 13px;"></a>
+    </div>
+
+    <div class="foot">
+      <p>Sachin Sharma || Sachin Lalwani <br></p>
+      <p style="margin-top: 5px;"> 70732 66167 &nbsp 78770 12277</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

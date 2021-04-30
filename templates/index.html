@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovac</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <!-- <style>
+        h1{
+            font-family: 'Corben', cursive;
+        }
+    </style> -->
+    <!-- <link rel="stylesheet" href="css1/reset.css">  -->
+    <!-- CSS reset -->
+	<link rel="stylesheet" href="static/css1/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="static/css1/demo.css"> 
+    <!-- Demo style -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<script>
+    var video = document.getElementById('bck');
+    video.play();
+</script>
+
+<body>
+    <!-- Background & animion & navbar & title -->
+    <video loop muted autoplay id="bck">
+        <source src="static/images/gf103.mp4" type="video/mp4">
+        hello
+    </video>
+    <!-- Background animtion-->
+    <!-- <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div> -->
+    <!-- header -->
+    <header class="animated fadeIn">
+        <!-- navbar -->
+        <div class="lft">
+            <img src="static/images/nittlogo.png" alt="logo" class="nlogo">
+            <p>National Institute of Technology<br> Tiruchirappalli</p>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="\">Home</a></li>
+                <li><a href="\about">About</a></li>
+                <li><a href="\event">Events</a></li>
+                <li><a href="\team">Team</a></li>
+                <li><a href="\contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!-- logo -->
+        <!-- <div class="logo"><span>N</span></div> -->
+    </header>
+    <!-- title & content -->
+    <div class="middle animated fadeIn">
+        <section class="header-content" style="animation-delay: .3s;">
+            <h1>INNOVAC '21</h1>
+            <p> An event conducted by <b>Parallel Computing Club</b>,<br>
+                including various sub-events like Mind Matrix and more.</p>
+            <!-- <div class="btns">
+                <button style="color:black;">Explore</button>
+                <button><a href="#0" style="text-decoration: none; color:black;" data-signin="login">Register</a></button>
+            </div> -->
+            <header class="cd-main-header" style="background: transparent; margin-left: -10px !important; margin-top: 10px !important;">
+                <nav class="cd-main-nav js-main-nav" style="padding-left: 0px;">
+                    <ul class="cd-main-nav__list js-signin-modal-trigger" style="padding-left: 0px;">
+                        <!-- inser more links here -->
+                        <li class="hvr"><a class="sin cd-main-nav__item cd-main-nav__item--signin" href="#0" data-signin="login" style="font-size: 20px !important;">Sign in</a></li>
+                        <li class="hvr"><a class="cd-main-nav__item cd-main-nav__item--signup" href="#0" data-signin="signup" style="font-size: 20px !important; margin-left: 10px !important; border: transparent;">Sign up</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <div class="year1">
+            <h1>We will be live in</h1>
+            <div class="countdown">
+                <div class="time1">
+                    <h2 id="days">00</h2>
+                    <p>days</p>
+                </div>
+                <div class="time1">
+                    <h2 id="hours">00</h2>
+                    <p>hours</p>
+                </div>
+                <div class="time1">
+                    <h2 id="minutes">00</h2>
+                    <p>minutes</p>
+                </div>
+                <div class="time1">
+                    <h2 id="seconds">00</h2>
+                    <p>seconds</p>
+                </div>
+                <!-- <img src="https://github.com/bradtraversy/vanillawebprojects/blob/master/new-year-countdown/img/spinner.gif?raw=true"
+        alt="Loading..." id="loading" class="loading" /> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="cd-signin-modal js-signin-modal" style="color: black;"> <!-- this is the entire modal form, including the background -->
+		<div class="cd-signin-modal__container"> <!-- this is the container wrapper -->
+			<ul class="cd-signin-modal__switcher js-signin-modal-switcher js-signin-modal-trigger" style="list-style: none; padding-left: 0px !important;">
+				<li><a href="#0" data-signin="login" data-type="login" style="font-size: 1.2rem;">Sign in</a></li>
+				<li><a href="#0" data-signin="signup" data-type="signup" style="font-size: 1.2rem;">New account</a></li>
+			</ul>
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="login"> <!-- log in form -->
+				<form class="cd-signin-modal__form">
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signin-email">E-mail</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-email" type="email" placeholder="E-mail">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signin-password">Password</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signin-password" type="text"  placeholder="Password">
+						<a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input type="checkbox" id="remember-me" checked class="cd-signin-modal__input ">
+						<label for="remember-me">Remember me</label>
+					</p>
+                    <!-- <p style="display: inline-block;">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Invalid Password
+                    </p> -->
+
+					<p class="cd-signin-modal__fieldset">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width" type="submit" value="Login">
+					</p>
+				</form>
+				
+				<p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="reset">Forgot your password?</a></p>
+			</div> <!-- cd-signin-modal__block -->
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="signup"> <!-- sign up form -->
+				<form class="cd-signin-modal__form">
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--username cd-signin-modal__label--image-replace" for="signup-username">Roll No</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-username" type="text" placeholder="Roll Number">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signup-email">E-mail</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-email" type="email" placeholder="E-mail">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+                    <!-- <p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="signup-email">College</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-email" type="text" placeholder="College">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p> -->
+
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--password cd-signin-modal__label--image-replace" for="signup-password">Password</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="signup-password" type="text"  placeholder="Password">
+						<a href="#0" class="cd-signin-modal__hide-password js-hide-password">Hide</a>
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input type="checkbox" id="accept-terms" class="cd-signin-modal__input ">
+						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit" value="Create account">
+					</p>
+				</form>
+			</div> <!-- cd-signin-modal__block -->
+
+			<div class="cd-signin-modal__block js-signin-modal-block" data-type="reset"> <!-- reset password form -->
+				<p class="cd-signin-modal__message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
+
+				<form class="cd-signin-modal__form">
+					<p class="cd-signin-modal__fieldset">
+						<label class="cd-signin-modal__label cd-signin-modal__label--email cd-signin-modal__label--image-replace" for="reset-email">E-mail</label>
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding cd-signin-modal__input--has-border" id="reset-email" type="email" placeholder="E-mail">
+						<span class="cd-signin-modal__error">Error message here!</span>
+					</p>
+
+					<p class="cd-signin-modal__fieldset">
+						<input class="cd-signin-modal__input cd-signin-modal__input--full-width cd-signin-modal__input--has-padding" type="submit" value="Reset password">
+					</p>
+				</form>
+
+				<p class="cd-signin-modal__bottom-message js-signin-modal-trigger"><a href="#0" data-signin="login">Back to log-in</a></p>
+			</div> <!-- cd-signin-modal__block -->
+			<a href="#0" class="cd-signin-modal__close js-close">Close</a>
+		</div> <!-- cd-signin-modal__container -->
+	</div> <!-- cd-signin-modal -->
+    <!-- <div class="footer">
+        Made with &#128151; by Innovac team
+    </div> -->
+    <script>
+        const days = document.getElementById("days");
+        const hours = document.getElementById("hours");
+        const minutes = document.getElementById("minutes");
+        const seconds = document.getElementById("seconds");
+        const countdown = document.getElementsByClassName("countdown");
+        const year = document.getElementsByClassName("year1");
+        const loading = document.getElementById("loading");
+
+        const nextYear = new Date().getFullYear() + 1;
+        const newYearTime = new Date(`January 01 ${nextYear} 00:00:00`);
+
+        function updateCountdown() {
+            const currentTime = new Date();
+            const difference = newYearTime - currentTime;
+            const currentDays = Math.floor(difference / 1000 / 60 / 60 / 24);
+            const currentHours = Math.floor(difference / 1000 / 60 / 60) % 24;
+            const currentMinutes = Math.floor(difference / 1000 / 60) % 60;
+            const currentSeconds = Math.floor(difference / 1000) % 60;
+            days.innerText = currentDays;
+            hours.innerText = currentHours < 10 ? "0" + currentHours : currentHours;
+            minutes.innerText =
+                currentMinutes < 10 ? "0" + currentMinutes : currentMinutes;
+            seconds.innerText =
+                currentSeconds < 10 ? "0" + currentSeconds : currentSeconds;
+        }
+
+        setTimeout(() => {
+            loading.remove();
+            countdown.style.display = "flex";
+        }, 1000);
+
+        setInterval(updateCountdown, 1000);
+
+        year.innerText = nextYear;
+
+    </script>
+    <script src="../static/js1/main.js"></script> <!-- polyfill for the HTML5 placeholder attribute -->
+    <script src="../static/js1/placeholders.min.js"></script> <!-- Resource JavaScript -->
+</body>
+
+</html>

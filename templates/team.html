@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <style>
+        @import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css';
+        @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css';
+        @import 'https://fonts.googleapis.com/css?family=Raleway:100,600';
+        @import 'https://fonts.googleapis.com/css?family=Open+Sans:300';
+
+        body {
+            background-color: #195f70 !important;
+        }
+
+        .section-title h2 {
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            margin: 3% 0;
+        }
+
+        .section-title p {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .single-team {
+            height: 240px;
+            width: 220px;
+            border-radius: 40%;
+            padding-bottom: 70px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px #000;
+        }
+
+        .team-img {
+            position: relative;
+            z-index: 5;
+            overflow: hidden;
+        }
+
+        .team-img img {
+            height: 300px;
+            width: 200px;
+            width: 100%;
+            transition: .3s;
+        }
+
+        .single-team:hover .team-img img {
+            opacity: 0.2;
+            transform: scale(1.1);
+        }
+
+        .team-content {
+            height: 50px;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            overflow: hidden;
+            bottom: 0;
+            transition: all .4s;
+            background: rgb(10 40 45);
+            z-index: 5;
+        }
+
+        .single-team:hover .team-content {
+            height: 120px;
+        }
+
+        .team-info {
+            padding: 5px 20px 5px 20px;
+            transition: all .5s;
+        }
+
+        .single-team:hover .team-content {
+            background: #000;
+        }
+
+        .single-team .team-content .team-info h3 {
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        .single-team:hover .team-info h3 {
+            color: tomato;
+        }
+
+        .team-info p {
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .single-team-text p {
+            margin-top: 5px;
+        }
+
+        .team-text {
+            color: #fff;
+            padding: 0 10px 5px;
+        }
+
+        .team-area {
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 3em;
+            font-family: 1000;
+        }
+
+
+
+
+
+        /* ignore the code below */
+
+
+        .link-area {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 15px;
+            border-radius: 40px;
+            background: tomato;
+            z-index: 10;
+        }
+
+        .link-area a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /*Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            /* background-image: url("logo.png"); */
+            /* color: white; Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            /* padding: 5px; Some padding */
+            border-radius: 100px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+    </style>
+    <link rel="stylesheet" href="../static/css/allevents.css">
+</head>
+
+<body style="background: #195f70 !important;">
+    
+
+    <header class="animated fadeIn">
+        <!-- navbar -->
+        <div class="lft">
+            <img src="../static/images/nittlogo.png" alt="logo" class="nlogo">
+            <p>National Institute of Technology<br> Tiruchirappalli</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="\">Home</a></li>
+                <li><a href="\about">About</a></li>
+                <li><a href="\event">Events</a></li>
+                <li><a href="\team">Team</a></li>
+                <li><a href="\contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- logo -->
+        <!-- <div class="logo"><span>N</span></div> -->
+    </header>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2><strong>Standing Team</strong></h2>
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Akriti.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Akriti Upadhyay <br></h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/akriti__upadhyay/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/akriti-upadhyay/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Amandeep.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Amandeep Yadav</h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/010amandeep/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/010amandeep/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Himanshi.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Himanshi Bansal</h3>
+                            </div>
+                            <br>
+
+                            <a href="https://www.instagram.com/himu_bansal/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/himanshi-bansal-2ba08a203/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Khushboo.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Khushboo Khanchandani</h3>
+                            </div>
+                            <a href="https://instagram.com/khushii_khanchandani"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/mwlite/in/041-khushboo"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <!-- <h2>Standing Team</h2> -->
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Manish.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Manish Pandey <br></h3>
+                            </div>
+                            <br>
+                            <a href="#"><img src="../static/members/Instagram.webp" width="32px" height="32px"
+                                    alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/mnk-q/"><img src="../static/members/LinkedIN.webp"
+                                    width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Lalwani.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Sachin Lalwani</h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/sachin___lalwani/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/084-sachin/"><img src="../static/members/LinkedIN.webp"
+                                    width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Sharma.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Sachin Sharma</h3>
+                            </div>
+                            <br>
+
+                            <a href="https://www.instagram.com/himu_bansal/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/himanshi-bansal-2ba08a203/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Rahul.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Rahul Kumar</h3>
+                            </div>
+                            <br>
+                            <a href=https://www.instagram.com/rahulkr_/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/rahul-kumar-621167179"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <!-- <h2>Standing Team</h2> -->
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3" style="align-items: center;">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2023/Mohit.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Mohit Motwani <br></h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/mohit.motwani.16/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/mohit-m-1500a7128"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2><strong>The Mentors</strong></h2>
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3" style="align-items: center;">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/saksham.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Saksham Jain</h3>
+                                <p>President</p>
+                            </div>
+                            <a href="https://www.instagram.com/jainsaksham1210/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/saksham-jain-5334541a2/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3" style="align-items: center;">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/sakshi.jfif" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Sakshi Jain <br></h3>
+                                <p>Vice President</p>
+                            </div>
+                            <a href="#"><img src="../static/members/Instagram.webp" width="32px" height="32px"
+                                    alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#"><img src="../static/members/LinkedIN.webp" width="32px" height="32px"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/nihal.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Nihal Johar</h3>
+                            </div>
+                            <br>
+
+                            <a href="#"><img src="../static/members/Instagram.webp" width="32px" height="32px"
+                                    alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/nihal-johar-384b5a15b/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/RIAM.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Ria Mangwani</h3>
+                                <p>Treasurer</p>
+                            </div>
+                            <a href="https://www.instagram.com/ria_mangwani08/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/ria-mangwani-b3a2a018a/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <!-- <h2>The Mentors</h2> -->
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/asif.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Asif ALi Khan <br></h3>
+                                <p>Programmer</p>
+                            </div>
+                            <a href="https://www.linkedin.com/in/akriti-upadhyay/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/akriti-upadhyay/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/basharath.jfif" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Basharat Nawaz</h3>
+                                <p>Programmer</p>
+                            </div>
+                            <a href="https://www.instagram.com/bash_nawaz/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/basharat-nawaz-b23928132/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/kuldeep.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Kuldeep Patidar</h3>
+                                <p>Web Designer</p>
+                            </div>
+
+                            <a href="https://www.instagram.com/kuldeep_patidar_kp/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/kuldeep-patidar-4870751b4/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/lakshay.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Lakshay Middha</h3>
+                                <p>Coordinator</p>
+                            </div>
+                            <a href="https://www.instagram.com/lakshaymiddha/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/lakshay-middha/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <!-- <h2>Standing Team</h2> -->
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/mahima.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Mahima Pandey</h3>
+                                <p>PR Incharge</p>
+                            </div>
+                            <a href="https://www.instagram.com/mahima4041/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/mahima-pandey-a58abb1a1/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2022/mansi.jfif" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Mansi Awasthi</h3>
+                                <p>PR Incharge</p>
+                            </div>
+                            <a href="#"><img src="../static/members/Instagram.webp" width="32px" height="32px"
+                                    alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#"><img src="../static/members/LinkedIN.webp" width="32px" height="32px"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <h2><strong>Batch 2k21</strong></h2>
+                    </div>
+                    <div class="section-title text-center">
+                        <!-- <h2><strong>Batch 2k21</strong></h2> -->
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/hardik.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Hardik Jain <br></h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/hardikjain_11/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/hardik-jain-b4b568193/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/himanshu.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Himanshu Shinde</h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/hmnshinde812/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/himanshu-shinde-6347a0183/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/mahesh.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Mahesh Kumar</h3>
+                            </div>
+                            <br>
+
+                            <a href="#"><img src="../static/members/Instagram.webp" width="32px" height="32px"
+                                    alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/maheshkumarsappani/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/pavitthra.jfif" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Pavitthira</h3>
+                            </div>
+                            <br>
+                            <a href="#"><img src="../static/members/Instagram.webp" width="32px" height="32px"
+                                    alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="#"><img src="../static/members/LinkedIN.webp" width="32px" height="32px"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center">
+                        <!-- <h2>Standing Team</h2> -->
+                    </div>
+                </div>
+
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/saurabh.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Saurabh Sharma <br></h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/sourabh1521/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/saurabh-sharma-110b50204/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/sukhi.jfif" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Sukhlal Ahirwar</h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/samratsukhi/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/samratsukhi/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/sweekriti.jpeg" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Sweekriti Singh</h3>
+                            </div>
+                            <br>
+
+                            <a href="https://www.instagram.com/sweeki20/"><img src="../static/members/Instagram.webp"
+                                    width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/weekriti-singh-015445143/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--== Single Team Item ==-->
+                <div class="col-md-3">
+                    <div class="single-team">
+                        <div class="team-img">
+                            <img src="../static/members/2021/tonmoy.jfif" alt="" class="img-responsive">
+                        </div>
+                        <div class="team-content">
+                            <div class="team-info">
+                                <h3>Tonmoy Goldler</h3>
+                            </div>
+                            <br>
+                            <a href="https://www.instagram.com/the_tonu_montana/"><img
+                                    src="../static/members/Instagram.webp" width="32px" height="32px" alt=""></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/tanmoy-golder-706499140/"><img
+                                    src="../static/members/LinkedIN.webp" width="32px" height="32px" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../static/images/top-arrow.png" width="40px"
+            height="40px" alt="Go to Top"></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

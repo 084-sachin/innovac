@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Events</title>
+    <link rel="stylesheet" href="../static/css/estyle.css">
+</head>
+<style>
+    /* .eitems {
+        border-left: 3px solid white;
+    } */
+
+    .oitems {
+        /* border-right: 3px solid white; */
+        margin-right: 15px !important;
+    }
+
+    .eventpic {
+        margin-right: 15px;
+    }
+</style>
+
+<body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <video loop muted autoplay id="bck">
+        <source src="../static/images/gf103.mp4" type="video/webm">
+        hello
+    </video>
+    <header>
+        <!-- navbar -->
+        <div class="lft animated fadeInLeft faster">
+            <img src="../static/images/nittlogo.png" alt="logo" class="nlogo">
+            <p>National Institute of Technology<br> Tiruchirappalli</p>
+        </div>
+        <nav class="animated fadeInRight faster">
+            <ul>
+                <li><a href="\">Home</a></li>
+                <li><a href="\about">About</a></li>
+                <li style="transform: scale(1.4,1.4);"><a href="\event">Events</a></li>
+                <li><a href="\team">Team</a></li>
+                <li><a href="\contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- logo -->
+        <!-- <div class="logo"><span>N</span></div> -->
+    </header>
+    <!-- <div class="heading">
+        <h1 class="eventhead">EVENTS</h1>
+    </div> -->
+    <div class="event">
+        <div class="eitems animated fadeIn">
+                <a href="events/ctf.html"><img src="../static/images/events/logos/mind.png" class="eventpic" alt="" style="filter: brightness(110%);"></a>
+            <div class="descrip">
+                <h1><a href="\event\mind_matrix" style="text-decoration: none;">Mind Matrix</a></h1>
+               <p>It is a special kind of cybersecurity competition designed to challenge its participants to solve computer security problems and/or capture and defend computer systems.</p>
+            </div>
+        </div>
+        <div class="oitems" data-aos="fade-up-left" data-aos-duration="500">
+            <div class="descrip" style="margin-right: 100px;">
+                <h1 style="margin-left: -110px;"><a href="\event\mothra" style="text-decoration: none;">Mothra</a></h1>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
+                <p>An event that will test your technical as well as reasoning skills. So get ready to participate and compete with your friends to reach at the top and become the real mothra.</p>
+            </div>
+            <a href="\event\mothra"><img src="../static/images/events/logos/mothra1.png" class="oeventpic" alt=""></a>
+        </div>
+    <div class="eitems" data-aos="fade-up-right">
+            <a href="\event\marathon"><img src="../static/images/events/logos/marathon.jpg" class="eventpic" alt=""></a>
+        <div class="descrip">
+            <h1><a href="\event\marathon" style="text-decoration: none;">Marathon</a></h1>
+            <p>An event specially designed to test your speed in problem solving. Get engaged in solving problems with a timer ticking on your head and test yourself.</p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
+        </div>
+    </div>
+    <div class="oitems" data-aos="fade-up-left">
+        <div class="descrip" style="margin-right: 110px;">
+            <h1><a href="\event\reverse" style="text-decoration: none;">Reverse Engineering</a></h1>
+            <p>You love coding? We too. But here is a twist, it is a unconventional coding test which will test your problem solving as well as cryptographic skills too.</p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
+        </div>
+            <a href="\event\reverse"><img src="../static/images/events/logos/reverse.jpeg" class="oeventpic" alt=""></a>
+           
+    </div>
+    <div class="eitems" style="margin-bottom: 60px;" data-aos="fade-up-right">
+            <a href="\event\nerdiness"><img src="../static/images/events/logos/nerdiness.png" class="eventpic" alt=""></a>
+        <div class="descrip">
+            <h1><a href="\event\nerdiness" style="text-decoration: none;">Nerdiness</a></h1>
+            <p>Enough of coding competitions, Nerdiness is a quiz competition which will test your subject knowledge. Participate and win in this short 20 minute contest.</p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
+        </div>
+    </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../static/images/top-arrow.png" width="40px" height="40px"
+            alt=""></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
